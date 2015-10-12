@@ -27,7 +27,7 @@ Google日本語入力用に、デフォルトのローマ字テーブルをベ�
 1. 二重母音拡張と撥音拡張を追加
   - 連続する母音入力(左手での連続打鍵回数)を低減
 
-(http://www7.plala.or.jp/dvorakjp/dvorakjp.htm)
+[DvorakJP - 日本語入力用拡張Dvorak](http://www7.plala.or.jp/dvorakjp/dvorakjp.htm)
 
 ### 本ローマ字テーブルについて
 
