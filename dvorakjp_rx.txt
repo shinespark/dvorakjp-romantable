@@ -283,6 +283,7 @@ dnk	ぢゅん
 dnx	ぢぃん
 tsa	つぁ
 tsi	つぃ
+tsu	つ
 tse	つぇ
 tso	つぉ
 ts'	つぁい
@@ -462,6 +463,20 @@ phq	ぴょん
 phj	ぴぇん
 phk	ぴゅん
 phx	ぴぃん
+pna	ぴゃ
+pni	ぴぃ
+pnu	ぴゅ
+pne	ぴぇ
+pno	ぴょ
+pn'	ぴゃい
+pn,	ぴょう
+pn.	ぴぇい
+pnp	ぴゅう
+pn;	ぴゃん
+pnq	ぴょん
+pnj	ぴぇん
+pnk	ぴゅん
+pnx	ぴぃん
 fa	ふぁ
 fi	ふぃ
 fu	ふ
@@ -759,7 +774,6 @@ jhx	じぃん
 ta	た
 ti	ち
 tu	つ
-tsu	つ
 te	て
 to	と
 t'	たい
