@@ -66,7 +66,6 @@ yy	っ	y
 rr	っ	r
 ww	っ	w
 www	w	ww
-cc	っ	c
 kya	きゃ
 kyi	きぃ
 kyu	きゅ
@@ -657,7 +656,6 @@ q,	くぉう
 q.	くぇい
 qp	くう
 q;	くぁん
-qq	くぉん
 qj	くぇん
 qk	くん
 qx	くぃん
@@ -728,7 +726,6 @@ j.	じぇい
 jp	じゅう
 j;	じゃん
 jq	じょん
-jj	じぇん
 jk	じゅん
 jx	じん
 jya	じゃ
