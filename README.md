@@ -1,4 +1,4 @@
-# dvorak-romantable
+# dvorakjp-romantable
 Google日本語入力用に、デフォルトのローマ字テーブルをベースにDvorakJPを加えて、さらに一部カスタマイズしたローマ字テーブルです。
 
 一部カスタマイズしていますが、通常のDvorakJP用のローマ字テーブルとして利用してもほぼ差し支えない設定になっています。
