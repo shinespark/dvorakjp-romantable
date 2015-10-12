@@ -530,7 +530,7 @@ fn'	ふゃい
 fn,	ふょう
 fnp	ふゅう
 fn;	ふゃん
-fnq	ふぉん
+fnq	ふょん
 fnk	ふゅん
 hwa	ふぁ
 hwi	ふぃ
