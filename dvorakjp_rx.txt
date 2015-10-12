@@ -584,7 +584,6 @@ lyi	ぃ
 xyi	ぃ
 lye	ぇ
 xye	ぇ
-ye	いぇ
 ka	か
 ki	き
 ku	く
@@ -870,6 +869,7 @@ wyi	ゐ
 xyu	ゅ
 lyu	ゅ
 yu	ゆ
+ye	いぇ
 wye	ゑ
 xyo	ょ
 lyo	ょ
