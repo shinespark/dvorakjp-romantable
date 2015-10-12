@@ -464,7 +464,7 @@ phk	ぴゅん
 phx	ぴぃん
 fa	ふぁ
 fi	ふぃ
-fu	ふぅ
+fu	ふ
 fe	ふぇ
 fo	ふぉ
 f'	ふぁい
