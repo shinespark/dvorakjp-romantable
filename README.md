@@ -45,7 +45,7 @@ Google日本語入力とDvorakJPのローマ字テーブルのマージにあた
 1. DvorakJP 0.2β時の`p`キーに二重母音拡張`uu`を復活
   - Google日本語入力では連続同文字打鍵での「っ」が入れられない問題は発生しない為
   - [DvorakJP - 前バージョンからの改定について](http://www7.plala.or.jp/dvorakjp/)
-1. DvorakJPの`q`のcombination削除と`k`のcombination有効
+1. DvorakJPの`q`,`x`のcombination削除と`k`のcombination有効
   - Google日本語入力に`qy*`がないことから未反映、デフォルトで`ky*`はあることから残しています
 1. DvorakJPの`p`, `j`, `k`, `x` のcombination keyは`h`,`n`どちらでも入力可能に
   - 左手側の子音入力時の拗音入力時に、右手薬指でなく人差し指でも入力変更です
