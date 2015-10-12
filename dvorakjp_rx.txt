@@ -36,6 +36,15 @@ vhi	ゔぃ
 vhu	ゔゅ
 vhe	ゔぇ
 vho	ゔょ
+vh'	ゔぁい
+vh,	ゔょう
+vh.	ゔぇい
+vhp	ゔゅう
+vh;	ゔゃん
+vhq	ゔょん
+vhj	ゔぇん
+vhk	ゔゅん
+vhx	ゔぃん
 qq	っ	q
 vv	っ	v
 ll	っ	l
