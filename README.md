@@ -1,11 +1,21 @@
 # dvorakjp-romantable
-Google日本語入力用デフォルトのローマ字テーブルをベースに、DvorakJPのマッピングを行ったローマ字テーブルです。
+Google 日本語入力用デフォルトのローマ字テーブルをベースに、DvorakJPのマッピングを行ったローマ字テーブルです。
 
 DvorakJP自体についてはこちら: [DvorakJP](http://www7.plala.or.jp/dvorakjp/)
 
 本リポジトリのローマ字テーブルは、さらに一部カスタマイズしていますが、通常のDvorakJP用のローマ字テーブルとして利用する分にはほぼ差し支えない設定になっています。
 
-### Google日本語入力のデフォルトローマ字テーブル(2015-10-11現在のもの) について
+## How to use
+
+1. [dvorakjp-romantable/dvorakjp_rx.txt](https://github.com/shinespark/dvorakjp-romantable/blob/master/dvorakjp_rx.txt) をローカルにダウンロードします。
+1. Google 日本語入力のPreferences > General > Romaji table > Customize... ボタンをクリックします。
+1. EditボタンからImport from file... を クリックし、dvorakjp_rx.txtを取り込み、OKをクリックします。
+
+正常に適用されていない場合には、Google 日本語入力を再起動してください。
+
+## 補足情報
+
+### Google 日本語入力のデフォルトローマ字テーブル(2015-10-11現在のもの) について
 
 通常のローマ字テーブルに加えて以下の特徴があります。
 
