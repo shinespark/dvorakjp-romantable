@@ -30,7 +30,7 @@ DvorakJP自体についてはこちら: [DvorakJP](http://www7.plala.or.jp/dvora
 1. 二重母音拡張と撥音拡張を追加
   - 連続する母音入力(左手での連続打鍵回数)を低減
 
-[DvorakJP - 日本語入力用拡張Dvorak](http://www7.plala.or.jp/dvorakjp/dvorakjp.htm)
+参照: [DvorakJP - 日本語入力用拡張Dvorak](http://www7.plala.or.jp/dvorakjp/dvorakjp.htm)
 
 ### 本ローマ字テーブルについて
 
@@ -46,7 +46,7 @@ Google日本語入力とDvorakJPのローマ字テーブルのマージにあた
   - 分かりづらいので。入力の際は`two`: `とぅ`などを利用してください。
 1. DvorakJP 0.2β時の`p`キーに二重母音拡張`uu`を復活
   - Google日本語入力では連続同文字打鍵での「っ」が入れられない問題は発生しない(はず)
-  - [DvorakJP - 前バージョンからの改定について](http://www7.plala.or.jp/dvorakjp/)
+  - 参照: [DvorakJP - 前バージョンからの改定について](http://www7.plala.or.jp/dvorakjp/)
 1. DvorakJPの`q`のコンビネーションの削除と、`k`のコンビネーション有効化
   - Google日本語入力に`qy*`が存在しないため、`q`のコンビネーション用のマッピングを行っていません。
   - DvorakJPではか行の入力の際に`k`を利用した場合のコンビネーションキーは存在しませんが、`k`でもか行が入力できることから、`k`でもコンビネーションキーを利用した二重母音拡張と拗音拡張が利用可能にしています。
