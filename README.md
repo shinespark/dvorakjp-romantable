@@ -43,7 +43,7 @@ DvorakJP自体についてはこちら: [DvorakJP](http://www7.plala.or.jp/dvora
 
 参照: [DvorakJP - 日本語入力用拡張Dvorak](http://www7.plala.or.jp/dvorakjp/dvorakjp.htm)
 
-### 本ローマ字テーブル(DvorakJP RX)について
+### DvorakJP RX(dvorakjp_rx.txt)について
 
 Google 日本語入力とDvorakJPのローマ字テーブルのマージにあたって、以下の一部変更を行っています。  
 
