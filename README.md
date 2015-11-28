@@ -31,7 +31,7 @@ DvorakJP自体についてはこちら: [DvorakJP](http://www7.plala.or.jp/dvora
 
 ### DvorakJPについて
 
-左手ホームポジションに母音がすべて揃っているDvorak配列を、日本語入力でも使いやすいように更に拡張するローマ字テーブルです。  
+左手ホームポジションに母音がすべて揃っているDvorak配列を、日本語入力でも使いやすいように更に拡張するローマ字テーブルです。
 右手と左手を交互に打鍵可能なよう、以下の特徴を持っています。
 
 1. `k*`のキーを`c*`でも利用可能
@@ -43,9 +43,9 @@ DvorakJP自体についてはこちら: [DvorakJP](http://www7.plala.or.jp/dvora
 
 参照: [DvorakJP - 日本語入力用拡張Dvorak](http://www7.plala.or.jp/dvorakjp/dvorakjp.htm)
 
-### DvorakJP RX(dvorakjp_rx.txt)について
+### DvorakJP Prime(dvorakjp_prime.txt)について
 
-Google 日本語入力とDvorakJPのローマ字テーブルのマージにあたって、以下の一部変更を行っています。  
+Google 日本語入力とDvorakJPのローマ字テーブルのマージにあたって、以下の一部変更を行っています。
 
 1. Google 日本語入力の `z*`キーによる記号の入力を、`;*`に変更
   - ざ行の入力と競合する為、Qwerty時の`z`のキーに位置する`;`に置換
