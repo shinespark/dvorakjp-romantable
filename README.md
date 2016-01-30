@@ -15,33 +15,32 @@ DvorakJP自体についてはこちら: [DvorakJP](http://www7.plala.or.jp/dvora
 
 ## 補足情報
 
-### Google 日本語入力のデフォルトローマ字テーブル(2015-10-11現在のもの) について
+### Google 日本語入力のデフォルトローマ字テーブルについて
 
-通常のローマ字テーブルに加えて以下の特徴があります。
+一般的なローマ字テーブルに加え、以下の特徴がありました。
 
-1. `z*`キーによる記号入力
+1. `z*`キーによる記号入力サポート
   - `zh`: `←`, `zj`: `↓`などの記号入力が可能
-1. 訓令式以外のローマ字テーブル
-  - `f*`, `ch*`, `ts*`などの一般的なヘボン式ローマ字テーブルの追加
+1. 訓令式以外のローマ字入力サポート
+  - `f*`, `ch*`, `ts*`などの一般的なヘボン式ローマ字
   - `kya`: `きゃ`などの`y`を利用した拗音の他に、`twa`: `とぁ`などの`w`拗音の追加
 1. `t'u`: `とぅ`などの`'`を利用した拗音が追加
-  - ただし、分かりづらい上に`twu`: `とぅ`など、他の入力でも代替可能な拗音もあり、利用価値が不明
+  - ただし、分かりづらい上、 `twu`: `とぅ`など他の入力でも代替可能な拗音もある
 
-デフォルトローマ字テーブルはこちら: [romantable_original.txt](https://github.com/shinespark/dvorak-romantable/blob/master/romantable_original.txt)
+Google 日本語入力のデフォルトローマ字テーブル(2015-10-11現在): [romantable_original.txt](https://github.com/shinespark/dvorak-romantable/blob/master/romantable_original.txt)
 
-### DvorakJPについて
+### DvorakJPのローマ字テーブルについて
 
-左手ホームポジションに母音がすべて揃っているDvorak配列を、日本語入力でも使いやすいように更に拡張するローマ字テーブルです。
-右手と左手を交互に打鍵可能なよう、以下の特徴を持っています。
+左手ホームポジションに母音がすべて揃っているDvorak配列に、より日本語入力でも使いやすく拡張したローマ字テーブルです。  
 
-1. `k*`のキーを`c*`でも利用可能
+1. `k*`キーを`c*`でも入力可能
   - 多様する子音をほぼ右手のみで入力可能に
-1. 拗音入力時に利用する`y`キーの代わりに、`h`, または`n`キーが利用可能
+1. 拗音入力時に利用する`y`キーの代わりに、`h`, または`n`キーが入力可能
   - 多様する子音をほぼ右手のみで入力可能に
 1. 二重母音拡張と撥音拡張を追加
   - 連続する母音入力(左手での連続打鍵回数)を低減
 
-参照: [DvorakJP - 日本語入力用拡張Dvorak](http://www7.plala.or.jp/dvorakjp/dvorakjp.htm)
+詳細: [DvorakJP - 日本語入力用拡張Dvorak](http://www7.plala.or.jp/dvorakjp/dvorakjp.htm) 
 
 ### DvorakJP Prime(dvorakjp_prime.txt)について
 
