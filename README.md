@@ -9,7 +9,8 @@ Google 日本語入力のデフォルトローマ字テーブルをベースに�
 1. Google 日本語入力のPreferences > General > Romaji table > Customize... ボタンをクリックします。
 1. EditボタンからImport from file... を クリックし、dvorakjp_rx.txtを取り込み、OKをクリックします。
 
-正常に適用されていない場合には、Google 日本語入力を再起動してください。
+通常は上記手順で適用されますが、時折正常に適用されない場合があります。  
+その際はGoogle 日本語入力を再起動してください。
 
 ## 補足情報
 
