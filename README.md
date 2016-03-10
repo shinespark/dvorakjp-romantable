@@ -1,7 +1,7 @@
 # dvorakjp-romantable
 Google 日本語入力のデフォルトローマ字テーブルをベースに、[DvorakJP](http://www7.plala.or.jp/dvorakjp/)のマッピングを行ったローマ字テーブルです。
 
-一部カスタマイズしていますが、通常のDvorakJP用のローマ字テーブルとして利用する分には差し支えありません。
+一部カスタマイズしていますが、DvorakJP([v1.0正式版](http://www7.plala.or.jp/dvorakjp/kaitei.htm))のローマ字テーブルとして利用する分には差し支えありません。
 
 ## How to use
 
