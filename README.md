@@ -1,7 +1,7 @@
 # dvorakjp-romantable
 Google 日本語入力のデフォルトローマ字テーブルをベースに、[DvorakJP](http://www7.plala.or.jp/dvorakjp/)のマッピングを行ったローマ字テーブルです。
+DvorakJP([v1.0正式版](http://www7.plala.or.jp/dvorakjp/kaitei.htm))のローマ字テーブルとしてご利用ください。
 
-一部カスタマイズしていますが、DvorakJP([v1.0正式版](http://www7.plala.or.jp/dvorakjp/kaitei.htm))のローマ字テーブルとして利用する分には差し支えありません。
 
 ## How to use
 
@@ -43,7 +43,7 @@ Google 日本語入力のデフォルトローマ字テーブル(2015-10-11現�
 
 ### DvorakJP Prime(dvorakjp_prime.txt)
 
-Google 日本語入力とDvorakJPのローマ字テーブルをマージしたテーブルです。  
+Google 日本語入力とDvorakJPのローマ字テーブルをマージしたファイルです。  
 マージにあたって、以下の変更を行っています。  
 
 1. Google 日本語入力の `z*`キーによる記号の入力を、`;*`に変更
