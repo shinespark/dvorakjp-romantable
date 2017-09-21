@@ -57,5 +57,5 @@ Google 日本語入力とDvorakJPのローマ字テーブルをマージした�
 1. DvorakJPの`k`によるか行の二重母音拡張と拗音拡張の有効可
 	- [DvorakJP](http://www7.plala.or.jp/dvorakjp/)  ではか行の入力を`c`だけに限定しているようですが、`k`でも入力可能にし、コンビネーションキーを利用した二重母音拡張と拗音拡張が利用可能
 1. DvorakJP 0.2β時の`p`キーに二重母音拡張`uu`を復活
-	- Google 日本語入力では連続同文字打鍵での「っ」が入れられない問題は発生しない(はず)
+	- Google 日本語入力では連続同文字打鍵での「っ」が入れられない問題は発生しない
 	- 参照: [DvorakJP - 前バージョンからの改定について](http://www7.plala.or.jp/dvorakjp/kaitei.htm)
