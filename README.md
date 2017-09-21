@@ -7,7 +7,7 @@ DvorakJP([v1.0正式版](http://www7.plala.or.jp/dvorakjp/kaitei.htm))のロー�
 
 1. [dvorakjp-romantable/dvorakjp_prime.txt](https://github.com/shinespark/dvorakjp-romantable/blob/master/dvorakjp_prime.txt) をローカルにダウンロードします。
 1. Google 日本語入力のPreferences > General > Romaji table > Customize... ボタンをクリックします。
-1. EditボタンからImport from file... を クリックし、dvorakjp_rx.txtを取り込み、OKをクリックします。
+1. EditボタンからImport from file... を クリックし、dvorakjp_prime.txtを取り込み、OKをクリックします。
 
 通常は上記手順で適用されますが、時折正常に適用されない場合があります。  
 その際はGoogle 日本語入力を再起動してください。
