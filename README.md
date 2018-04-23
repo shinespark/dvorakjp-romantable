@@ -38,7 +38,7 @@ Google 日本語入力のデフォルトローマ字テーブル(2015-10-11現�
 1. 二重母音拡張と撥音拡張を追加
 	- 連続する母音入力(左手での連続打鍵回数)を低減
 
-詳細(公式): [DvorakJP - 日本語入力用拡張Dvorak](http://www7.plala.or.jp/dvorakjp/dvorakjp.htm) 
+詳細(公式): [DvorakJP - 日本語入力用拡張Dvorak](http://www7.plala.or.jp/dvorakjp/dvorakjp.htm)
 
 ### DvorakJP Prime(dvorakjp_prime.txt)
 
@@ -58,3 +58,13 @@ Google 日本語入力とDvorakJPのローマ字テーブルをマージした�
 1. DvorakJP 0.2β時の`p`キーに二重母音拡張`uu`を復活
 	- Google 日本語入力では連続同文字打鍵での「っ」が入れられない問題は発生しない
 	- 参照: [DvorakJP - 前バージョンからの改定について](http://www7.plala.or.jp/dvorakjp/kaitei.htm)
+
+### DvorakJP Prime with Emoji(dvorakjp_prime_with_emoji.txt)
+
+dvorakjp_prime.txt に、絵文字変換を追加したファイルです。
+
+e.g. `:tada:`: `🎉`
+
+#### Thanks: 
+* [IME でも :muscle: みたいに Emoji を入力したい！ - pockestrap](http://pocke.hatenablog.com/entry/2017/03/05/193553)
+* [Add emojis · tock203/dvorakjp-romantable@341d34f](https://github.com/tock203/dvorakjp-romantable/commit/341d34fff084e945ac5a098ac14f7c48f55983e1)
