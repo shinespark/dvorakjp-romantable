@@ -73,7 +73,10 @@ e.g. `:tada`: `🎉`
 :basketball_player	⛹
 ```
 
+[emojione/emojione](https://github.com/emojione/emojione/) の emoji.json を取り込んで生成しています。
+
 #### Thanks:
+
 * [IME でも :muscle: みたいに Emoji を入力したい！ - pockestrap](http://pocke.hatenablog.com/entry/2017/03/05/193553)
 * [Add emojis · tock203/dvorakjp-romantable@341d34f](https://github.com/tock203/dvorakjp-romantable/commit/341d34fff084e945ac5a098ac14f7c48f55983e1)
 
