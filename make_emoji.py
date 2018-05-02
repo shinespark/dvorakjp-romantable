@@ -20,8 +20,7 @@ for code, v in r.json().items():
     shortname_alternates = v['shortname_alternates']
     code_points = v['code_points']['base']
 
-    # TODO: 
-    # ignore surrogate pairs
+    # ignore other tones
     if '-' in code_points:
         continue
 
