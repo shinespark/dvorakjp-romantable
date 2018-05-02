@@ -63,8 +63,16 @@ Google 日本語入力とDvorakJPのローマ字テーブルをマージした�
 
 dvorakjp_prime.txt に、絵文字変換を追加したファイルです。
 
-e.g. `:tada:`: `🎉`
+e.g. `:tada`: `🎉`
 
-#### Thanks: 
+通常は後ろの `:` 無しでも変換可能ですが、別の emoji 名の入力途中とも判断できる emoji は後ろの `:` が必要です。
+
+```
+:baseball	⚾	# baseball に続く他のemojiが存在しない為、: 無しでも確定可能
+:basketball:	🏀	# basketball に続く他のemojiがある為、確定の為に : が必要
+:basketball_player	⛹
+```
+
+#### Thanks:
 * [IME でも :muscle: みたいに Emoji を入力したい！ - pockestrap](http://pocke.hatenablog.com/entry/2017/03/05/193553)
 * [Add emojis · tock203/dvorakjp-romantable@341d34f](https://github.com/tock203/dvorakjp-romantable/commit/341d34fff084e945ac5a098ac14f7c48f55983e1)
