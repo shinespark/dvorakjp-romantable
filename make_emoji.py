@@ -14,17 +14,22 @@ if r.status_code != requests.codes.ok:
     print("Couldn't get a response. HTTP Status Code: %s" % r.status_code)
     sys.exit()
 
+
 pre_d = {}  # { name: emoji }
 for code, v in r.json().items():
     shortname = v['shortname'].rstrip(':')
     shortname_alternates = v['shortname_alternates']
-    code_points = v['code_points']['base']
+    code_points = v['code_points']['fully_qualified']
 
-    # ignore other tones
-    if '-' in code_points:
-        continue
+    if '-' in code_points:  # surrogate pairs
+        splited_code_points = code_points.split('-')
+        unicode = ''
+        for code_point in splited_code_points:
+            unicode += chr(int(code_point, 16))
+        emoji = unicode.encode('utf-16', 'surrogatepass').decode('utf-16')
+    else:
+        emoji = chr(int(code_points, 16))
 
-    emoji = chr(int(code_points, 16))
     pre_d[shortname] = emoji
 
     # only add non forward-matched emojis
