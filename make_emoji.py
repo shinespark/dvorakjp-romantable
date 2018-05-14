@@ -19,7 +19,7 @@ pre_d = {}  # { name: emoji }
 for code, v in r.json().items():
     shortname = v['shortname'].rstrip(':')
     shortname_alternates = v['shortname_alternates']
-    code_points = v['code_points']['base']
+    code_points = v['code_points']['fully_qualified']
 
     if '-' in code_points:  # surrogate pairs
         splited_code_points = code_points.split('-')
