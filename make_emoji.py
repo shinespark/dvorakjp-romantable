@@ -37,7 +37,7 @@ for code, v in r.json().items():
 
     pre_d[shortname] = emoji
 
-    # only add non forward-matched emojis
+    # only add non forward-matched alternate shortname
     for i in shortname_alternates:
         if not i.startswith(shortname):
             pre_d[i.rstrip(':')] = emoji
