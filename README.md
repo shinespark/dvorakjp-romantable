@@ -61,9 +61,8 @@ Google 日本語入力とDvorakJPのローマ字テーブルをマージした�
 
 ### DvorakJP Prime with Emoji(dvorakjp_prime_with_emoji.txt)
 
-dvorakjp_prime.txt に、絵文字変換を追加したファイルです。
-
-e.g. `:tada`: `🎉`
+dvorakjp_prime.txt に、絵文字変換を追加したファイルです。  
+全角で `:tada` と入力を試みると、 `🎉` に変換されます。
 
 通常は後ろの `:` 無しでも入力可能ですが、別の emoji 名の入力途中とも判断できる emoji の入力には後ろの `:` が必要です。
 
