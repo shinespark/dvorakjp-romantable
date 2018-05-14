@@ -23,6 +23,11 @@ for code, v in r.json().items():
 
     if '-' in code_points:  # surrogate pairs
         splited_code_points = code_points.split('-')
+
+        # Skip surrogate pairs for 100kB file size limit on Google Japanese Input.
+        if len(splited_code_points) >= 3:
+            continue
+
         unicode = ''
         for code_point in splited_code_points:
             unicode += chr(int(code_point, 16))
