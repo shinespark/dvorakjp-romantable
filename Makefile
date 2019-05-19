@@ -1,5 +1,5 @@
 init:
-	pip3 install -r requirements.txt
+	pipenv install
 
 emoji:
 	python3 make_emoji.py > emoji.txt
