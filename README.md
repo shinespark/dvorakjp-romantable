@@ -25,7 +25,7 @@ DvorakJP([v1.0正式版](http://www7.plala.or.jp/dvorakjp/kaitei.htm))のロー�
 1. `t'u`: `とぅ`などの`'`を利用した拗音入力サポート
 	- ただし、`twu`: `とぅ`など他の入力でも代替可能かつ、ノーヒント
 
-Google 日本語入力のデフォルトローマ字テーブル(2015-10-11現在): [romantable_original.txt](https://github.com/shinespark/dvorak-romantable/blob/master/romantable_original.txt)
+Google 日本語入力のデフォルトローマ字テーブル(2015-10-11現在): [romantable_original.txt](https://github.com/shinespark/dvorak-romantable/blob/master/lib/romantable_original.txt)
 
 ### DvorakJP(v1.0正式版)のローマ字テーブル
 
