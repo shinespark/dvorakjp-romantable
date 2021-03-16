@@ -15,9 +15,9 @@ DvorakJP([v1.0正式版](http://www7.plala.or.jp/dvorakjp/kaitei.htm))のロー�
 
 ### Google 日本語入力のデフォルトローマ字テーブル
 
-一般的なローマ字テーブルに加え、以下の特徴がありました。
+一般的なローマ字テーブルに、以下の変更が加えてありました(2015-10-11現在)。
 
-1. `z*`キーによる記号入力サポート
+1. `z*`キーによる矢印記号入力サポート
 	- `zh`: `←`, `zj`: `↓`などの記号入力をサポート
 1. 訓令式以外のローマ字入力サポート
 	- `f*`, `ch*`, `ts*`など、一般的なローマ字テーブルにも存在するヘボン式ローマ字入力
@@ -25,25 +25,24 @@ DvorakJP([v1.0正式版](http://www7.plala.or.jp/dvorakjp/kaitei.htm))のロー�
 1. `t'u`: `とぅ`などの`'`を利用した拗音入力サポート
 	- ただし、`twu`: `とぅ`など他の入力でも代替可能かつ、ノーヒント
 
-Google 日本語入力のデフォルトローマ字テーブル(2015-10-11現在): [romantable_original.txt](https://github.com/shinespark/dvorak-romantable/blob/master/lib/romantable_original.txt)
+Google 日本語入力のデフォルトローマ字テーブル: [romantable_original.txt](https://github.com/shinespark/dvorak-romantable/blob/master/lib/romantable_original.txt)
 
 ### DvorakJP(v1.0正式版)のローマ字テーブル
 
-左手ホームポジションに母音がすべて揃っているDvorak配列に、より日本語入力でも打鍵しやすいよう拡張されたローマ字テーブルです。
+[DvorakJP - 日本語入力用拡張Dvorak](http://www7.plala.or.jp/dvorakjp/dvorakjp.htm) にて公開されているローマ字テーブルです。
+左手ホームポジションに母音がすべて揃っているDvorak配列に、より日本語入力でも打鍵しやすいよう以下の拡張が行われています。
 
-1. か行が右手側の`c*`でも入力可能
+1. か行を右手側の`c*`でも入力可能
 	- 多様する子音をほぼ右手のみで入力可能に
 1. 拗音入力時に利用する`y`キーの代わりに、`h`, または`n`キーが入力可能
 	- 多様する子音をほぼ右手のみで入力可能に
 1. 二重母音拡張と撥音拡張を追加
 	- 連続する母音入力(左手での連続打鍵回数)を低減
 
-詳細(公式): [DvorakJP - 日本語入力用拡張Dvorak](http://www7.plala.or.jp/dvorakjp/dvorakjp.htm)
-
 ### DvorakJP Prime(dvorakjp_prime.txt)
 
-Google 日本語入力とDvorakJPのローマ字テーブルをマージしています。
-マージにあたって、以下の変更を行っています。  
+Google 日本語入力にDvorakJPのローマ字テーブルをマージするに辺り、以下の変更を行ったローマ字テーブルです。  
+このリポジトリで公開しているメインのローマ字テーブルになります。
 
 1. Google 日本語入力の `z*`キーによる記号の入力を、`;*`に変更
 	- ざ行の入力と競合する為、Qwerty時の`z`キーに位置する`;`に置換
@@ -61,7 +60,7 @@ Google 日本語入力とDvorakJPのローマ字テーブルをマージして�
 
 ### DvorakJP Prime with Emoji(dvorakjp_prime_with_emoji.txt)
 
-dvorakjp_prime.txt に、絵文字変換を追加しています。
+dvorakjp_prime.txt に、絵文字変換を追加したローマ字テーブルです。  
 全角で `:tada` と入力を試みると、 `🎉` に変換されます。
 
 通常は後ろの `:` 無しでも入力可能ですが、別の emoji 名の入力途中とも判断できる emoji の入力には後ろの `:` が必要です。
