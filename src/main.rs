@@ -1,4 +1,10 @@
 use clap::Parser;
+use std::path::PathBuf;
+
+use dvorakjp_romantable::build_roman_table_with_emoji::RomanTableWithEmojiBuilder;
+use dvorakjp_romantable::detect_duplicates::DuplicateDetector;
+
+const DEFAULT_EMOJI_FILE: &str = "./lib/emoji.txt";
 
 #[derive(Parser)]
 #[clap(name = "cargo")]
@@ -22,17 +28,16 @@ struct BuildRomanTableWithEmoji {
 #[clap(author, version, about, long_about = None)]
 struct DetectDuplicates {
     #[clap(long, parse(from_os_str))]
-    output_file: std::path::PathBuf,
+    detect_file: std::path::PathBuf,
 }
 
 fn main() {
-    match Cargo::parse() {
-        Cargo::BuildRomanTableWithEmoji(args) => {
-            println!("{:?}", args.emoji_file);
-            println!("{:?}", args.output_file);
-        }
-        Cargo::DetectDuplicates(args) => {
-            println!("{:?}", args.output_file);
-        }
-    }
+    let _ = match Cargo::parse() {
+        Cargo::BuildRomanTableWithEmoji(args) => RomanTableWithEmojiBuilder::exec(
+            args.emoji_file
+                .unwrap_or_else(|| PathBuf::from(DEFAULT_EMOJI_FILE)),
+            args.output_file,
+        ),
+        Cargo::DetectDuplicates(args) => DuplicateDetector::exec(args.detect_file),
+    };
 }
