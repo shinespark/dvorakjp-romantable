@@ -1,3 +1,4 @@
+use anyhow::Result;
 use clap::Parser;
 use std::path::PathBuf;
 
@@ -18,20 +19,20 @@ enum Cargo {
 #[clap(author, version, about, long_about = None)]
 struct BuildRomanTableWithEmoji {
     #[clap(long, parse(from_os_str))]
-    emoji_file: Option<std::path::PathBuf>,
+    emoji_file: Option<PathBuf>,
 
     #[clap(long, parse(from_os_str))]
-    output_file: std::path::PathBuf,
+    output_file: PathBuf,
 }
 
 #[derive(clap::Args)]
 #[clap(author, version, about, long_about = None)]
 struct DetectDuplicates {
     #[clap(long, parse(from_os_str))]
-    detect_file: std::path::PathBuf,
+    detect_file: PathBuf,
 }
 
-fn main() {
+fn main() -> Result<()> {
     let _ = match Cargo::parse() {
         Cargo::BuildRomanTableWithEmoji(args) => RomanTableWithEmojiBuilder::exec(
             args.emoji_file
@@ -40,4 +41,5 @@ fn main() {
         ),
         Cargo::DetectDuplicates(args) => DuplicateDetector::exec(args.detect_file),
     };
+    Ok(())
 }
