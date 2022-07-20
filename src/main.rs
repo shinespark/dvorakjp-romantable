@@ -6,6 +6,8 @@ use dvorakjp_romantable::build_roman_table_with_emoji::RomanTableWithEmojiBuilde
 use dvorakjp_romantable::detect_duplicates::DuplicateDetector;
 
 const DEFAULT_EMOJI_FILE: &str = "./lib/emoji.txt";
+const DEFAULT_INPUT_FILE: &str = "./dvorakjp_prime.txt";
+const DEFAULT_OUTPUT_FILE: &str = "./dvorakjp_prime_with_emoji.txt";
 
 #[derive(Parser)]
 #[clap(name = "cargo")]
@@ -19,10 +21,13 @@ enum Cargo {
 #[clap(author, version, about, long_about = None)]
 struct BuildRomanTableWithEmoji {
     #[clap(long, parse(from_os_str))]
+    input_file: Option<PathBuf>,
+
+    #[clap(long, parse(from_os_str))]
     emoji_file: Option<PathBuf>,
 
     #[clap(long, parse(from_os_str))]
-    output_file: PathBuf,
+    output_file: Option<PathBuf>,
 }
 
 #[derive(clap::Args)]
@@ -32,13 +37,20 @@ struct DetectDuplicates {
     detect_file: PathBuf,
 }
 
-fn main() -> Result<()> {
+#[tokio::main]
+async fn main() -> Result<()> {
     let _ = match Cargo::parse() {
-        Cargo::BuildRomanTableWithEmoji(args) => RomanTableWithEmojiBuilder::exec(
-            args.emoji_file
-                .unwrap_or_else(|| PathBuf::from(DEFAULT_EMOJI_FILE)),
-            args.output_file,
-        ),
+        Cargo::BuildRomanTableWithEmoji(args) => {
+            RomanTableWithEmojiBuilder::exec(
+                args.input_file
+                    .unwrap_or_else(|| PathBuf::from(DEFAULT_INPUT_FILE)),
+                args.emoji_file
+                    .unwrap_or_else(|| PathBuf::from(DEFAULT_EMOJI_FILE)),
+                args.output_file
+                    .unwrap_or_else(|| PathBuf::from(DEFAULT_OUTPUT_FILE)),
+            )
+            .await
+        }
         Cargo::DetectDuplicates(args) => DuplicateDetector::exec(args.detect_file),
     };
     Ok(())
