@@ -59,9 +59,9 @@ impl RomanTableWithEmojiBuilder {
         let all_emojis = Self::get_emojis().await?;
         let emoji_vec = Self::build_emojis(all_emojis);
         let emoji_records = Self::build_emoji_records(emoji_vec);
-        let emoji_records = Self::trim_end_unique_name(emoji_records);
+        let trimmed_emoji_records = Self::trim_end_unique_name(emoji_records);
 
-        Self::write_emoji_file(emoji_records, &emoji_file)?;
+        Self::write_emoji_file(trimmed_emoji_records, &emoji_file)?;
         Self::concat_files(input_file, emoji_file, output_file)?;
 
         Ok(())
@@ -149,7 +149,7 @@ impl RomanTableWithEmojiBuilder {
 
         vec.into_iter()
             .map(|(name, char)| {
-                if Self::has_forward_match(&name, &names) {
+                if Self::has_starts_with_same_name(&name, &names) {
                     (name, char)
                 } else {
                     (name.trim_end_matches(':').to_string(), char)
@@ -158,9 +158,12 @@ impl RomanTableWithEmojiBuilder {
             .collect()
     }
 
-    fn has_forward_match(name: &str, names: &[String]) -> bool {
+    fn has_starts_with_same_name(name: &str, names: &[String]) -> bool {
         let trimmed_name = name.trim_end_matches(':').to_string();
-        names.iter().any(|x| trimmed_name.starts_with(x))
+        names
+            .iter()
+            .filter(|&x| x != name) // 自身は除外
+            .any(|x| x.starts_with(&trimmed_name))
     }
 
     fn write_emoji_file(emoji_vec: EmojiVec, emoji_file: &PathBuf) -> Result<()> {
@@ -183,5 +186,32 @@ impl RomanTableWithEmojiBuilder {
             .expect("Unable to write data.");
 
         Ok(())
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    mod has_starts_with_same_name {
+        use super::*;
+
+        #[test]
+        fn any() {
+            let result = RomanTableWithEmojiBuilder::has_starts_with_same_name(
+                ":basketball:",
+                &[":basketball_player:".to_string()],
+            );
+            assert!(result);
+        }
+
+        #[test]
+        fn not_any() {
+            let result = RomanTableWithEmojiBuilder::has_starts_with_same_name(
+                ":baseball:",
+                &[":basketball_player:".to_string()],
+            );
+            assert!(!result);
+        }
     }
 }
