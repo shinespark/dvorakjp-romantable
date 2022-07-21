@@ -76,6 +76,7 @@ impl RomanTableWithEmojiBuilder {
             .into_iter()
             .map(|(_, obj)| obj)
             .collect::<Vec<EmojiObj>>();
+
         Ok(vec)
     }
 
@@ -100,19 +101,15 @@ impl RomanTableWithEmojiBuilder {
 
     fn build_emoji(obj: EmojiObj, code: EmojiCode) -> Result<Emoji> {
         let char = Self::parse_unicode(&code)?;
+        let name = obj.shortname.trim_matches(':').to_string();
         let name_alternates = obj
             .shortname_alternates
             .into_iter()
-            .filter(|x| {
-                // TODO: テストで保証できてない
-                !x.rsplit(':')
-                    .collect::<String>()
-                    .starts_with(&obj.shortname)
-            })
+            .map(|x| x.trim_matches(':').to_string())
             .collect::<Vec<_>>();
 
         Ok(Emoji {
-            name: obj.shortname,
+            name,
             name_alternates,
             char,
         })
@@ -150,20 +147,19 @@ impl RomanTableWithEmojiBuilder {
         vec.into_iter()
             .map(|(name, char)| {
                 if Self::has_starts_with_same_name(&name, &names) {
-                    (name, char)
+                    (format!(":{}:", name), char)
                 } else {
-                    (name.trim_end_matches(':').to_string(), char)
+                    (format!(":{}", name), char)
                 }
             })
             .collect()
     }
 
     fn has_starts_with_same_name(name: &str, names: &[String]) -> bool {
-        let trimmed_name = name.trim_end_matches(':').to_string();
         names
             .iter()
             .filter(|&x| x != name) // 自身は除外
-            .any(|x| x.starts_with(&trimmed_name))
+            .any(|x| x.starts_with(&name))
     }
 
     fn write_emoji_file(emoji_vec: EmojiVec, emoji_file: &PathBuf) -> Result<()> {
