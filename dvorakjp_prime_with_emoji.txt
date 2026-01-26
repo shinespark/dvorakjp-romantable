@@ -460,7 +460,7 @@ phk	ぴゅん
 phx	ぴぃん
 fa	ふぁ
 fi	ふぃ
-fu	ふ
+fu	ふゅ
 fe	ふぇ
 fo	ふぉ
 f'	ふぁい
