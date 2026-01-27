@@ -72,9 +72,7 @@ impl RomanTableWithEmojiBuilder {
             .await?
             .json::<HashMap<String, EmojiObj>>()
             .await?;
-        let vec = hashmap
-            .into_iter()
-            .map(|(_, obj)| obj)
+        let vec = hashmap.into_values()
             .collect::<Vec<EmojiObj>>();
 
         Ok(vec)
@@ -159,7 +157,7 @@ impl RomanTableWithEmojiBuilder {
         names
             .iter()
             .filter(|&x| x != name) // 自身は除外
-            .any(|x| x.starts_with(&name))
+            .any(|x| x.starts_with(name))
     }
 
     fn write_emoji_file(emoji_vec: EmojiVec, emoji_file: &PathBuf) -> Result<()> {
