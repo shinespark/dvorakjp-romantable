@@ -72,8 +72,7 @@ impl RomanTableWithEmojiBuilder {
             .await?
             .json::<HashMap<String, EmojiObj>>()
             .await?;
-        let vec = hashmap.into_values()
-            .collect::<Vec<EmojiObj>>();
+        let vec = hashmap.into_values().collect::<Vec<EmojiObj>>();
 
         Ok(vec)
     }
