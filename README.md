@@ -6,7 +6,15 @@ DvorakJP のローマ字テーブルとしてご利用ください。
 
 ## Usage
 
-1. [dvorakjp_prime.txt](dvorakjp_prime.txt) をローカルにダウンロードします。
+### azooKey
+
+1. [dvorakjp_prime.txt](azookey/dvorakjp_prime.txt) をローカルにダウンロードします。
+1. azooKey `設定 > カスタマイズ > 入力方式` を `カスタム` に変更します。
+1. カスタム入力テーブル > 編集 > ファイルから読み込む をクリックし、`dvorakjp_prime.txt` を選択し、`OK` をクリックします。
+
+### Google 日本語入力
+
+1. [dvorakjp_prime.txt](google_japanese_input/dvorakjp_prime.txt) をローカルにダウンロードします。
 1. Google 日本語入力の `Preferences > General > Romaji table > Customize...` ボタンをクリックします。
 1. `Edit` ボタンから `Import from file...` を クリックし、`dvorakjp_prime.txt` を選択し、`OK` をクリックします。
 
@@ -15,6 +23,9 @@ DvorakJP のローマ字テーブルとしてご利用ください。
 正常に適用されなかった場合でも Google 日本語入力を再起動すると適用されます。
 
 ## Note
+### azooKey のローマ字テーブル仕様
+
+TBD.
 
 ### Google 日本語入力のデフォルトローマ字テーブルの仕様
 
