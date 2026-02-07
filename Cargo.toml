@@ -1,6 +1,6 @@
 [package]
 name = "dvorakjp-romantable"
-edition = "2021"
+edition = "2024"
 version = "1.2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
